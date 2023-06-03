@@ -1,0 +1,350 @@
+
+
+.blog-form {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.blog-form .form-container {
+    width: 500px;
+}
+
+.blog-form .form-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.blog-form form label {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.blog-form form input, textarea {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    resize: none;
+}
+
+.blog-form form .date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.blog-form form .date .sdate {
+    margin-right: 10px;
+}
+
+
+.blog-form form textarea {
+    height: 200px;
+}
+
+.blog-form form .checkbox-group .checkbox-sub-group {
+    display: flex;
+    margin-right: 30px;
+    margin-top: 20px;
+    align-items: center;
+    border: none;
+}
+
+.blog-form form .checkbox-group {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 20px;
+}
+
+
+.checkbox-group label {
+    font-size: 13px;
+    align-items: flex-start;
+    color: black;
+    margin-right: 100%;
+    display: flex;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+}
+
+.checkbox-group .checkbox-sub-group input {
+    margin-left: 100%;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.blog-form form .blog-image-group {
+   width: 97%;
+   font-size: 20px;
+   font-weight: 400;
+   padding: 5px;
+   border: 1px solid #c4c4c4;
+   background: #f4f3f3;
+   border-radius: 10px;
+   cursor: pointer;
+   margin: 0;
+}
+
+.blog-form form .blog-image-group label p {
+ font-size: 18px;  
+ background-color: #c4c4c4;
+ border-radius: 5px;
+ padding: 5px;
+ margin: 0;
+}
+
+.blog-form form .blog-image-group label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 2px 0px #e2e0e0;
+}
+
+.blog-form form .button{
+    text-align: right;
+}
+
+.blog-form form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 11px;
+    background: #292726;
+    border-radius: 18px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.blog .line {
+    border: 1px solid #bebcbc;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hal2 {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.blog .blog-list {
+    margin: 20px;
+    margin-bottom: 80px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    margin-left: 90px;
+    
+}
+
+
+.blog .blog-list .blog-list-item {
+    width: 270px;
+    padding: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 3px solid #dbdbdb ;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px 0px rgba(99, 102, 110, .4);
+    background-color: white;
+}
+
+.blog .blog-list .blog-list-item .blog-image {
+    flex: 1;
+}
+
+.blog .blog-list .blog-list-item .blog-image img {
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog .blog-list .blog-list-item .blog-isi {
+    padding-left: 20px;
+    flex: 2;
+}
+
+.blog .blog-list .button-group {
+    text-align: right;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.blog .blog-list .button-group .edit {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background: #292726;
+    width: 48%;
+    color: white;
+}
+
+.blog .blog-list .button-group .delete {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: #ec4d37;
+    width: 48%;
+}
+
+.blog .blog-list .blog-list-item h4 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+.blog .blog-list .blog-list-item p {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: justify;
+}
+
+.blog .blog-list .blog-list-item .icons {
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.page2title {
+    text-align: center;
+}
+
+.blog-detail {
+    margin-left: 100px;
+    padding: 0;
+    
+}
+
+.blog-detail-container {
+    width: 80%;
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.blog-detail-container img {
+    width: 550px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.blog-detail-container h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 15px;
+}
+
+.blog-detail-container .isiblogdetail {
+    padding: 5px 5px 0 5px;
+}
+
+.isiblogdetail{
+    margin-bottom: 20px;
+    margin-left: 30px;
+    
+}
+
+.isiblogdetail div {
+    margin-bottom: 10px;
+}
+
+.isiblogdetail i {
+    padding-right: 15px;
+    margin-bottom: 20px;
+}
+
+.isiblogdetail h4 {
+    line-height: 0;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 12px;
+}
+
+.blog-detail-container p {
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: justify;
+}
+
+.paragraf {
+    width: 80%;
+    display: block;
+    margin-top: 50px;
+    text-align: justify;
+    padding-left: 140px;
+}
+
+@media only screen and (max-width: 900px) {
+    .blog{
+      display: contents;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .blog-form{
+      padding: 0px 10px;
+    }
+  
+    .form-container{
+      padding: 0px 20px;
+      margin-bottom: 40px;
+    }
+  
+    
+    .hal2{
+      padding: 0px 40px;
+    }
+    
+    
+    .blog .blog-list{
+      display: grid;
+      justify-content: center;
+      grid-template-columns: auto auto;
+      margin: 10px;
+      
+    }     
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .item-collapse {
+      display: none;
+    }
+  
+    #barsmenu {
+      display: block;
+    }
+  }

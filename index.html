@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Personal Web</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="https://kit.fontawesome.com/81634d0f93.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+        <div class="nav-left">
+            <ul>
+                <li>
+                    <img src="logo.png" alt="logo dumbways">
+                </li>
+                <li class="item-collapse">
+                    <a class="active" href="index.html">Home</a>
+                </li>
+                <li class="item-collapse">
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li class="item-collapse">
+                    <a href="testimonials.html">Testimonials</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right item-collapse">
+            <a href="contact.html">Contact Me</a>
+        </div>
+        <div class="nav-right" id="barsmenu">
+            <button
+              style="background-color: transparent; border: none; cursor: pointer"
+              onclick="openHamburger()"
+            >
+              <i class="fa-2x fa-solid fa-bars"></i>
+            </button>
+        </div>
+        </nav>
+
+        <div class="hamburger-nav-container" id="hamburger-nav-container">
+            <a href="index.html" class="hamburger-active">Home</a>
+            <a href="myproject.html">My Project</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+
+        <div class="container">
+            <section class="card">
+                
+                <div class="left">
+                        <h3 style="font-weight: bold;">Hi Welcome to my hut</h3>
+                        <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quo consequuntur laudantium voluptatibus quibusdam cumque accusamus consectetur tenetur quasi est earum pariatur possimus, quam amet praesentium eius saepe excepturi blanditiis.</p>
+                        <div class="buttoncontact">
+                            <a href="contact.html">
+                              <button class="contact">contact</button>
+                            </a> 
+                            <a href="#">
+                              <button class="cv">download CV <i class="fa-solid fa-download"></i></button>
+                            </a>
+                        </div>
+
+                        <div class="social-media">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                </div>
+                <div class="right">
+                    <div style="
+                            width: 300px;
+                            margin: 0 auto;   
+                            padding: 10px;
+                            border-radius: 10px;
+                            text-align: center;
+                            box-shadow: 0 0 15px #cecece;"
+                            class="card-container">
+                            <img src="foto.jpg" alt="kucing" style="
+                            width: 100%;
+                            border-radius: 10px 10px 0 0;
+                            "/>
+                            <h4>Kucing</h4>
+                            <p style="font-size: 12px;">Frontend Engineer</p>
+                    </div>
+                </div>
+
+                
+            </section>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
