@@ -1,0 +1,223 @@
+<html>
+    <head>
+        <title>Blog Page</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/blog.css">
+        <script src="https://kit.fontawesome.com/81634d0f93.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li>
+                        <img src="logo.png" alt="logo dumbways">
+                    </li>
+                    <li class="item-collapse">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="item-collapse">
+                        <a  class="active" href="blog.html">Blog</a>
+                    </li>
+                    <li class="item-collapse">
+                        <a href="testimonials.html">Testimonials</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right item-collapse">
+                <a href="contact.html">Contact Me</a>
+            </div>
+            <div class="nav-right" id="barsmenu">
+                <button
+                  style="background-color: transparent; border: none; cursor: pointer"
+                  onclick="openHamburger()"
+                >
+                  <i class="fa-2x fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    
+        <div class="hamburger-nav-container" id="hamburger-nav-container">
+                <a href="index.html">Home</a>
+                <a href="myproject.html" class="hamburger-active">My Project</a>
+                <a href="contact.html">Contact Me</a>
+                <a href="testimonials.html">My Testimonials</a>
+        </div>
+            <div class="blog">
+                <div class="blog-form">
+                    <div class="form-container">
+                        <form onsubmit="addBlog(event)">
+                            <h1>Add My Project</h1>
+                            <div>
+                                <label for="blog-title">Project Name</label>
+                                <input type="text" id="blog-title">
+                            </div>
+                            <div class="date">
+                                <div class="sdate">
+                                <label for="start-date">Start Date</label>
+                                <input type="date" id="start-date">
+                                </div>
+                                <div class="edate">
+                                <label for="end-date">End Date</label>
+                                <input type="date" id="end-date">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="blog-content">Description</label>
+                                <textarea id="blog-content"></textarea>
+                            </div>
+                            <div>
+                                <label for="technologies">Technologies</label>
+                                <div class="checkbox-group">
+                                    <div class="checkbox-sub-group">
+                                        <input type="checkbox" id="nodejs" />
+                                        <label for="nodejs" class="js-check">Node Js</label>
+                                    </div>
+                                    <div class="checkbox-sub-group">
+                                        <input type="checkbox" id="nextjs" />
+                                        <label for="nextjs" class="check">Next Js</label>
+                                    </div>
+                                    <div class="checkbox-sub-group">
+                                        <input type="checkbox" id="reactjs" />
+                                        <label for="reactjs" class="react-check">React Js</label>
+                                    </div>
+                                    <div class="checkbox-sub-group">
+                                        <input type="checkbox" id="typescript" />
+                                        <label for="typescript" class="go-check">TypeScript</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <label>Upload Image</label>
+                                <div class="blog-image-group">
+                                    <label for="image">
+                                        <p>Choose</p>
+                                        <i class="fa-solid fa-paperclip fa-fw"></i>
+                                    </label>
+                                    <input type="file" id="image" hidden>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <button type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <hr class="line">
+                <h2 class="page2">My Project</h2>
+            
+                <section class="hal2">
+                <div id="contents" class="blog-list">
+                    <div class="blog-list-item">
+                        <div class="blog-image">
+                            <img src="pc1.jpg" alt=""/>
+                        </div>
+        
+                        <div class="blog-isi">
+                            
+                            <h4>
+                                <a href="blogdetail.html" target="_blank">Komputer</a>
+                            </h4>
+                            <p class="durasi">Durasi : 1 bulan</p>
+                            
+                            <p class="isicontent">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque consequatur voluptas, provident placeat ducimus ullam, nesciunt dolorem consectetur illum nisi mollitia, ab deserunt. Culpa nulla voluptatem ratione dolore obcaecati. 
+                            </p>
+                            <div class="icons">
+                                <i class="fa-brands fa-node-js" id="nodejs-icon"></i>
+                                <i class="fa-brands fa-react" id="reactjs-icon"></i>
+                                <i class="fa-brands fa-golang fa-xl fa-fw" id="go-icon"></i>
+                            </div>
+                                
+                            <div class="button-group">
+                                <button class="edit">Edit</button>
+                                <button class="delete">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-list-item">
+                        <div class="blog-image">
+                            <img src="pc2.webp" alt=""/>
+                        </div>
+        
+                        <div class="blog-isi">
+                            
+                            <h4>
+                                <a href="blogdetail.html" target="_blank">Komputer Baru</a>
+                            </h4>
+                            <p class="durasi">Durasi : 3 bulan</p>
+                            
+                            <p class="isicontent">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque consequatur voluptas, provident placeat ducimus ullam, nesciunt dolorem consectetur illum nisi mollitia, ab deserunt. Culpa nulla voluptatem ratione dolore obcaecati. 
+                            </p>
+                            <div class="icons">
+                                <i class="fa-brands fa-node-js" id="nodejs-icon"></i>
+                                <i class="fa-brands fa-react" id="reactjs-icon"></i>
+                                <i class="fa-brands fa-golang fa-xl fa-fw" id="go-icon"></i>
+                            </div>
+                            <div class="button-group">
+                                <button class="edit">Edit</button>
+                                <button class="delete">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-list-item">
+                        <div class="blog-image">
+                            <img src="pc3.jpeg" alt=""/>
+                        </div>
+        
+                        <div class="blog-isi">
+                            
+                            <h4>
+                                <a href="blogdetail.html" target="_blank">Komputer Jadul</a>
+                            </h4>
+                            <p class="durasi">Durasi : 5 bulan</p>
+                            
+                            <p class="isicontent">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque consequatur voluptas, provident placeat ducimus ullam, nesciunt dolorem consectetur illum nisi mollitia, ab deserunt. Culpa nulla voluptatem ratione dolore obcaecati. 
+                            </p>
+                            <div class="icons">
+                                <i class="fa-brands fa-node-js" id="nodejs-icon"></i>
+                                <i class="fa-brands fa-react" id="reactjs-icon"></i>
+                                <i class="fa-brands fa-golang fa-xl fa-fw" id="go-icon"></i>
+                            </div>
+                            <div class="button-group">
+                                <button class="edit">Edit</button>
+                                <button class="delete">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-list-item">
+                        <div class="blog-image">
+                            <img src="pc4.jpg" alt=""/>
+                        </div>
+        
+                        <div class="blog-isi">
+                            
+                            <h4>
+                                <a href="blogdetail.html" target="_blank">Komputer Layar Lebar</a>
+                            </h4>
+                            <p class="durasi">Durasi : 10 bulan</p>
+                            
+                            <p class="isicontent">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque consequatur voluptas, provident placeat ducimus ullam, nesciunt dolorem consectetur illum nisi mollitia, ab deserunt. Culpa nulla voluptatem ratione dolore obcaecati. 
+                            </p>
+                            <div class="icons">
+                                <i class="fa-brands fa-node-js" id="nodejs-icon"></i>
+                                <i class="fa-brands fa-react" id="reactjs-icon"></i>
+                                <i class="fa-brands fa-golang fa-xl fa-fw" id="go-icon"></i>
+                            </div>
+                            <div class="button-group">
+                                <button class="edit">Edit</button>
+                                <button class="delete">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                </section>
+            </div>
+            <script src="blog.js"></script>
+            <script src="index.js"></script>
+    </body>
+</html>

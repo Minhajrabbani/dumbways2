@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="CSS/contact.css"/>
+        <link rel="stylesheet" href="CSS/style.css"/>
+        <script src="https://kit.fontawesome.com/81634d0f93.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li>
+                        <img src="logo.png" alt="logo dumbways">
+                    </li>
+                    <li class="item-collapse">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="item-collapse">
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li class="item-collapse">
+                        <a  href="testimonials.html">Testimonials</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right item-collapse">
+                <a href="contact.html">Contact Me</a>
+            </div>
+            <div class="nav-right" id="barsmenu">
+                <button
+                  style="background-color: transparent; border: none; cursor: pointer"
+                  onclick="openHamburger()"
+                >
+                  <i class="fa-2x fa-solid fa-bars"></i>
+                </button>
+            </div>
+            </nav>
+            <div class="hamburger-nav-container" id="hamburger-nav-container">
+                <a href="index.html">Home</a>
+                <a href="myproject.html">My Project</a>
+                <a href="contact.html" class="hamburger-active">Contact Me</a>
+                <a href="testimonials.html">My Testimonials</a>
+            </div>
+        <form>
+            <h2>GET IN TOUCH</h2>
+            <div>
+            <label for="input-name">Name</label>
+            <input id="input-name" type="text" required/>
+            </div>
+
+            <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" required/>
+            </div>
+
+            <div>
+            <label for="nohp">Phone Number</label>
+            <input id="nohp" type="number" required/>
+            </div>
+
+            <div>
+            <label for="subject">Subject</label>
+            <select id="subject">
+                <option value="" hidden>Select</option>
+                <option>Frontend</option>
+                <option>Backend</option>
+                <option>Fullstack</option>
+            </select>
+            </div>
+
+            <div>
+            <label for="text">Your Messsage</label>
+            <textarea id="text" rows="5" cols="10"></textarea>
+            </div>
+
+            <div>
+            <button type="button" onclick="submitData()">submit</button>
+            </div>
+        </form>
+        <script src="contact.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
