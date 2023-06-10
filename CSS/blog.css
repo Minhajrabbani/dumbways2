@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.container-fluid {
+    height: 100vh;
+   background-color: #e2e7ea; 
+  }
+
+.container-form {
+    width: 450px;
+  }
